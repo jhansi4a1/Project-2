@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="4" hostname="Admin-PC" name="pytest" skipped="0" tests="4" time="145.570" timestamp="2022-06-19T08:14:03.821654"><testcase classname="test_scrapping" name="test_Amazon_mobile" time="0.006"><failure message="TypeError: Amazon_mobile() takes 1 positional argument but 2 were given">def test_Amazon_mobile():
+        url="https://www.amazon.in/s?k=mobile+is+4G+6+gb+ram+128+gb+memory+card&amp;crid=L0KQ281O32K0&amp;sprefix=mobile+is+4g%2Caps%2C232&amp;ref=nb_sb_noss"
+&gt;       assert amazon().Amazon_mobile(url)=="Mobile is a 4G, 6 GB RAM and 128 GB memory."
+E       TypeError: Amazon_mobile() takes 1 positional argument but 2 were given
+
+test_scrapping.py:7: TypeError</failure></testcase><testcase classname="test_scrapping" name="test_Amazon_laptop" time="0.007"><failure message="TypeError: Amazon_laptop() takes 1 positional argument but 2 were given">def test_Amazon_laptop():
+        url="https://www.amazon.in/s?k=laptop+is+i5%2C+8gb+ram+with+1+tb+hdd&amp;crid=2Q28C0S06MVXN&amp;sprefix=%2Caps%2C1887&amp;ref=nb_sb_ss_recent_6_0_recent"
+&gt;       assert amazon().Amazon_laptop(url)=="Laptop is i5, 8GB RAM with 1 TB HDD"
+E       TypeError: Amazon_laptop() takes 1 positional argument but 2 were given
+
+test_scrapping.py:11: TypeError</failure></testcase><testcase classname="test_scrapping" name="test_Flipkart_mobile" time="0.001"><failure message="TypeError: Flipkart_Mobile() takes 1 positional argument but 2 were given">def test_Flipkart_mobile():
+        url="https://www.flipkart.com/search?q=Mobile+is+a+4G%2C+6+GB+RAM+and+128+GB+memory.&amp;otracker=search&amp;otracker1=search&amp;marketplace=FLIPKART&amp;as-show=on&amp;as=off&amp;as-pos=1&amp;as-type=HISTORY"
+&gt;       assert flipkart().Flipkart_Mobile(url)=="Mobile is a 4G, 6 GB RAM and 128 GB memory."
+E       TypeError: Flipkart_Mobile() takes 1 positional argument but 2 were given
+
+test_scrapping.py:16: TypeError</failure></testcase><testcase classname="test_scrapping" name="test_Flipkart_laptop" time="0.001"><failure message="TypeError: Flipkart_Laptop() takes 1 positional argument but 2 were given">def test_Flipkart_laptop():
+        url="https://www.flipkart.com/search?q=Laptop%20is%20i5%2C%208GB%20RAM%20with%201%20TB%20HDD&amp;otracker=search&amp;otracker1=search&amp;marketplace=FLIPKART&amp;as-show=on&amp;as=off"
+&gt;       assert flipkart().Flipkart_Laptop(url)=="Laptop is i5, 8GB RAM with 1 TB HDD"
+E       TypeError: Flipkart_Laptop() takes 1 positional argument but 2 were given
+
+test_scrapping.py:20: TypeError</failure></testcase></testsuite></testsuites>
